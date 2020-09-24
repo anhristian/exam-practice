@@ -4,6 +4,7 @@ public class UnaryOperators {
 
   public static void main(String[] args) {
 
+  // first example of decrement and increment operators; tricky
 
     int e = 3;
     int f = ++e * 5 / e-- + --e;
@@ -16,6 +17,25 @@ public class UnaryOperators {
     //5+2
     //7
     System.out.println("e = " + e + " f = " + f);
+
+    // second example of decrement and increment operators.
+    int g = 6;
+    int h = 2;
+    int i = ++h + --g * 3 + 2 * g++ - h-- % --g;
+
+    // h = 3, g = 6
+    // 3 + --g * 3 + 2 * g++ - h-- % --g;
+    // h = 3 g = 5
+    // 3 + 5 * 3 + 2 * 5 - h-- % --g;
+    // h=2 g=6
+    // 3 + 5 * 3 + 2 * 5 - 3 % 5;
+    //g=6
+    // 3 + 15 + 10 - 3
+    // 25
+
+    System.out.println("g = " + g +  " h = " + h + " i = " + i);
+
+
   }
 
 
