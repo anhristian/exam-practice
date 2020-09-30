@@ -23,6 +23,22 @@ public class TernaryOperator {
     // a = 2;
     System.out.println(a + ", " + b + ", " + c);
 
+    int d = 1;
+    int e = 2;
+    int f = 3;
+
+    if (d < 10) {
+      f = d++ < 1 ? e++ : f++;
+      // f = f;
+      // d = 2; is incremented from 1 to 2
+      // e = 2; stays at 2, because is not executed
+      //f  = 3; f stays at 3 forever it is assigned.
+    } else{
+      f = (d + e) < 2 ? d++ : e++;
+    }
+
+    System.out.println(d + ", " + e + ", " + f);
+
   }
 
 }
