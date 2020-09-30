@@ -33,7 +33,7 @@ public class ObjectEquality {
     System.out.println("int1 hash= " + System.identityHashCode(int1));
     System.out.println("int2 hash= " + System.identityHashCode(int2));
     System.out.println("int3 hash= " + System.identityHashCode(int3));  // all 3 will have different hash codes so when calling the == we compare that hash that is different for all// of them
-    
+
   }
 
 }
