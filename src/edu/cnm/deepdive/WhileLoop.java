@@ -42,7 +42,7 @@ public class WhileLoop {
     // a = b -> a = 7;
     // b-- -> b = 6
     // a+b = 7 + 6 = 13
-    
+
     System.out.println(a + ", "+ b + ", " + (a + b));
   }
 
