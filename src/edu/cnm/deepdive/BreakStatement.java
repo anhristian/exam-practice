@@ -1,6 +1,7 @@
 package edu.cnm.deepdive;
 
 public class BreakStatement {
+  // Break statement breaks the loop at the indicated element of the array, and moves on with the program execution.
 
   public static void main(String[] args) {
     //  myLabel:
