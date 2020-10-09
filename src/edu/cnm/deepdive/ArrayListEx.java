@@ -38,8 +38,21 @@ public class ArrayListEx {
     pets.add(0, "frog");
     System.out.println(pets);
 
-    pets.add(1, "bird");
+    pets.add(1, "bird"); // frog, bird, dog,parrot, cat
     System.out.println(pets);
+
+    // remove method
+    pets.remove("cat");     // frog, bird, dog, parrot
+    System.out.println(pets);
+
+    pets.remove(2);
+    System.out.println(pets); //frog, bird, parrot
+
+    // set method - new element at the indicated position..substituted the old element
+    pets.set(0, "newBird");
+    System.out.println(pets);
+
+   //  pets.set(6, "myDog");  //trows exception IndexOutOfBoundsEx because index 6 doesn't exist here
   }
 
 }
