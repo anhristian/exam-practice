@@ -23,7 +23,17 @@ public class SortingList {
     List<Integer> numbers = Arrays.asList(5, 4, 8, 10, 11, 7, 3);
     System.out.println(numbers);
 
-    Collections.sort(numbers);
+    Collections.sort(numbers); // arranged from small to big
     System.out.println(numbers);
+
+
+
+    // to search in a list, the array needs to be sorted
+
+    int index = Collections.binarySearch(numsList, "10");
+    System.out.println(index); // we got index 0, because the list was sorted
+
+    index = Collections.binarySearch(numbers, 5);
+    System.out.println(index); // we got index 2 because it is sorted .
   }
 }
