@@ -52,7 +52,9 @@ public class ArrayListEx {
     pets.set(0, "newBird");
     System.out.println(pets);
 
-   //  pets.set(6, "myDog");  //trows exception IndexOutOfBoundsEx because index 6 doesn't exist here
   }
+
+
+
 
 }
