@@ -48,7 +48,7 @@ public class IteratingList2 {
   }
 
   private static String[] createArray() {
-    String[] stringArray = new String[10_000_000];
+    String[] stringArray = new String[5_000_000];
 
     for (int i = 0; i < stringArray.length; i++) {
       stringArray[i] = "Array" + i;
