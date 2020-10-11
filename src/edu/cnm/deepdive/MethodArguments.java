@@ -24,4 +24,14 @@ public class MethodArguments {
 
  // void  test(int a; int b) {} // does not compile because of the semicolon
 
+  public  void jump1(int... numbers) {}
+
+  public void  jump2(int start, int... numbers){}
+
+  // public void jump3(int... numbers, int start){} //does not compile because vararg have to be last argument
+
+  public void jump4(int[] start, int[] numbers){}
+
+  
 }
+
