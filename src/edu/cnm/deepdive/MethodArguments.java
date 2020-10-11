@@ -44,7 +44,7 @@ public class MethodArguments {
     common.publicPrint();
 
     System.out.println("publicNumber= " + common.publicNumber);
-    
+
    /* System.out.println("protectedNumber " + common.protectedNumber);
     System.out.println("defaultNumber= " + common.defaultNumber);
     System.out.println("privateNumber= " + common.privateNumber);
