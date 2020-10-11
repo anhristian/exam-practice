@@ -1,5 +1,7 @@
 package edu.cnm.deepdive;
 
+import edu.cnm.deepdive.common.Common;
+
 public class MethodArguments {
 
   int getZero() {  // 0 arguments
@@ -32,6 +34,21 @@ public class MethodArguments {
 
   public void jump4(int[] start, int[] numbers){}
 
-  
+
+
+  // from the Common package we can access just publicPrint()
+
+  public static void main(String[] args) {
+
+    Common common = new Common();
+    common.publicPrint();
+
+    System.out.println("publicNumber= " + common.publicNumber);
+    
+   /* System.out.println("protectedNumber " + common.protectedNumber);
+    System.out.println("defaultNumber= " + common.defaultNumber);
+    System.out.println("privateNumber= " + common.privateNumber);
+*/   // does not compile because they are in a different package.
+  }
 }
 
