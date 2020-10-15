@@ -1,4 +1,4 @@
-package edu.cnm.deepdive;
+package edu.cnm.deepdive.classdesign;
 
 import java.util.ArrayList;
 import java.util.Collections;
