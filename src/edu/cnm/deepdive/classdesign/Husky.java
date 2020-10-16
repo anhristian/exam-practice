@@ -8,4 +8,9 @@ public class Husky extends Dog {
 
   }
 
+  @Override
+  public void eat() {
+    super.eat();
+    System.out.println("Husky is eating");
+  }
 }

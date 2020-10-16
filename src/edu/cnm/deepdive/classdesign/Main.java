@@ -9,6 +9,9 @@ public class Main {
     Dog dog = new Dog(5);
     dog.setName("Dill");
     dog.printDetails();
+
+    husky.eat();
+    System.out.println("avg= " + husky.getAverageWeight());
   }
 
 }
