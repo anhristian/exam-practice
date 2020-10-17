@@ -17,7 +17,7 @@ public class Rabbit extends Animal {
     // super();
     // this();
     // setAge(3);
-    super(3); //instead of all those methos we could call just super(),
+    super(3); //instead of all those methods we could call just super(),
                     // because parent class Animal has de method age()
   }
 
