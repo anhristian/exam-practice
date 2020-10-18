@@ -41,4 +41,12 @@ public class Animal {
   public void printDetails() {
     System.out.println("name= " + name + " age= " + age);
   }
+
+  protected void printName() {
+
+  }
+
+  public  int getWeight(){
+    return 2000;
+  }
 }

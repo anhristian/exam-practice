@@ -12,6 +12,13 @@ public class Main {
 
     husky.eat();
     System.out.println("avg= " + husky.getAverageWeight());
+
+    Bear bear = new Bear();
+    bear.setName("Misha");
+    bear.setAge(10);
+    bear.eatMeat();
+    bear.eatPlants();
+    bear.printDetails();
   }
 
 }

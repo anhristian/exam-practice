@@ -20,6 +20,6 @@ public class Dog extends Animal implements CanRun{
 
   @Override
   public void run(int speed) {
-    
+
   }
 }
