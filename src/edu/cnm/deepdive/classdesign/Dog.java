@@ -1,6 +1,6 @@
 package edu.cnm.deepdive.classdesign;
 
-public class Dog extends Animal {
+public class Dog extends Animal implements CanRun{
 
   public Dog(int age) {
     super(age);
@@ -16,5 +16,10 @@ public class Dog extends Animal {
 
   public double getAverageWeight() {
     return super.getAverageWeight() + 20;
+  }
+
+  @Override
+  public void run(int speed) {
+    
   }
 }
