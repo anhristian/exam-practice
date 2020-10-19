@@ -24,5 +24,5 @@ public class Polymorphism {
 
   // If we have a class that has just 2 references , to itself and to the Object class it is not polymorphic
   // If we have a class that has 3 or more references, than it is polymorphic, ex: Dog, Cat, Bear, Rabbit they are polymorphic
-  //because they refer to Object, to itself, and to the Animal class.
+      //because they refer to Object, to itself, and to the Animal class.
 }
