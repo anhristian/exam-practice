@@ -1,6 +1,6 @@
 package edu.cnm.deepdive.classdesign;
 
-public class Rabbit extends Animal {
+public class Rabbit extends Animal implements Herbivore, Hop{
 
   public Rabbit () {
   //  super;  // does not compile
@@ -21,4 +21,8 @@ public class Rabbit extends Animal {
                     // because parent class Animal has de method age()
   }
 
+  @Override
+  public void printDetails() {
+    System.out.println("Rabbit average jump heights= " + Hop.getAverageJumpHeight());
+  }
 }

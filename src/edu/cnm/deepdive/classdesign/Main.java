@@ -19,6 +19,15 @@ public class Main {
     bear.eatMeat();
     bear.eatPlants();
     bear.printDetails();
+
+    Rabbit rabbit = new Rabbit();
+    rabbit.eatPlants();
+    rabbit.printDetails();
+
+    Cat cat = new Cat(3);
+    int speed = cat.getSpeed();
+    System.out.println("Cat speed is= " + speed);
+
   }
 
 }
