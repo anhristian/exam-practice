@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.Month;
+import java.util.Calendar;
+import java.util.Date;
 
 public class UsingDateAndTime {
 
@@ -22,6 +24,15 @@ public class UsingDateAndTime {
     System.out.println(localDateTime);
     localDateTime = localDateTime.minusHours(10).minusDays(3).plusWeeks(2);
     System.out.println(localDateTime);
+
+    //before java 8
+    Date myDate = new Date();
+    Calendar calendar = Calendar.getInstance();
+    calendar.setTime(myDate);
+    calendar.set(Calendar.DATE,1);
+    calendar.set(Calendar.MONTH,2);
+    myDate = calendar.getTime();
+    System.out.println(myDate);
 
   }
 }
