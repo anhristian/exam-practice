@@ -52,6 +52,16 @@ public class LambdaExpressions {
     print(animals, animal -> animal.canJump());
     print(animals, animal -> !animal.canJump());
 
+    print(animals, (Animal animal) -> {
+      return animal.canJump(); 
+    });
+
+    print(animals, (Animal animal) -> {
+  //    Animal animal = new Animal("cat", true, false) //doesn't compile because the name is same (animal)
+      System.out.println("checking animal= " + animal);
+      return animal.canJump();
+    });
+
   }
 
   private static void print(List<Animal> animals, CheckAnimal filter) {
