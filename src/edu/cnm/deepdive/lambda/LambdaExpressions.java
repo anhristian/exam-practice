@@ -3,6 +3,7 @@ package edu.cnm.deepdive.lambda;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 class Animal {
 
@@ -28,7 +29,7 @@ class Animal {
     return type;
   }
 }
-    interface CheckAnimal {
+    interface CheckAnimal {     //functional interface(one method)
       boolean check (Animal animal);
     }
     class CheckCanJump implements CheckAnimal {
@@ -47,13 +48,13 @@ public class LambdaExpressions {
     animals.add(new Animal("rabbit", true, false));
     animals.add(new Animal("dog", true, true));
 
-    print(animals, new CheckCanJump());
+   // print(animals, new CheckCanJump());
 
     print(animals, animal -> animal.canJump());
     print(animals, animal -> !animal.canJump());
 
     print(animals, (Animal animal) -> {
-      return animal.canJump(); 
+      return animal.canJump();
     });
 
     print(animals, (Animal animal) -> {
@@ -62,11 +63,22 @@ public class LambdaExpressions {
       return animal.canJump();
     });
 
+    List<String> names = new ArrayList<>();
+    names.add("John");
+    names.add("Anthony");
+    names.add("Jimmy");
+    names.add("Timmy");
+
+    System.out.println("names = " + names);
+
+    names.removeIf(name -> name.charAt(0) == 'J');
+    System.out.println("after filter names=" +names);
+
   }
 
-  private static void print(List<Animal> animals, CheckAnimal filter) {
+  private static void print(List<Animal> animals, Predicate<Animal> filter) {
     for (Animal animal : animals) {
-      if (filter.check(animal)) {
+      if (filter.test(animal)) {
         System.out.println(animal.getType());
       }
     }
